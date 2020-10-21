@@ -224,42 +224,51 @@ Loading...
 add_action('wp_body_open', 'headerContent');
 function headerContent()
 {
-require_once 'scrappingContent.php';
+require_once 'fungsiSyoobe.php';
+$url = 'https://www.syoobe.co.id';
+$paramContent = [
+    '<header class="header slide">',
+    '</header>',
+    '<div class="main-nav-bar slide">',
+    '</div>',
+    '<div class="content slide">',
+    '</div>',
+    '<div class="section category-list">',
+    '</div>',
+    '<div class="resp-tabs-container shop-list collection_box">',
+    '</div>',
+    '<footer class="footer slide clearfix">',
+    '</footer>'
+];
+$dataHeader = GetContent($url, $paramContent[0]);
+$dataHeader = explode($paramContent[1], $dataHeader[1]);
+$header = $paramContent[0];
+$headerPrimary = $dataHeader[0]."</header>";
+echo $header;
+echo $headerPrimary;
 
-    $url = 'https://syoobe.co.id';
 
-    $arrHeader = [
-        '<header class="header slide">',
-        '</header>',
-        '<div class="mainhead">',
-        '</div>',
-        '<div class="top-head">',
-        '</div>',
-        '<div id="logo">',
-        '</div>',
-        '<div class="mobile-element">',
-        '</div>',
-        '<div class="main-nav-bar slide">',
-        '</div>',
-        '<div class="content slide">',
-        '</div>'
-    ];
+$dataMenu = GetContent($url, $paramContent[2]);
+$dataMenu = explode($paramContent[4], $dataMenu[1]);
+$menu = $paramContent[2];
+$menuPrimary = $dataMenu[0];
+echo $menu;
+echo $menuPrimary;
 
-    $dataMenu1 = new scrappingContent();
-    $dataMenu1->setContentsHeader($url, $arrHeader);
-    $dataMenu1->getContentsHeader(0, 0);
 
-    $dataHeader2 = new scrappingContent();
-    $dataHeader2->setContentsHeader($url, $arrHeader);
-    $dataHeader2->getContentsHeader(0, 1);
+$dataSlide = GetContent($url, $paramContent[4]);
+$dataSlide = explode($paramContent[5], $dataSlide[1]);
+$slide = $paramContent[4];
+$slidePrimary = $dataSlide[0].'</div>';
 
-    $dataHeader3 = new scrappingContent();
-    $dataHeader3->setContentsHeader($url, $arrHeader);
-    $dataHeader3->getContentsHeader(1, '');
+$ajaxTag = '
+<div id="ajax_message">
+</div>
 
-    $dataSlider1 = new scrappingContent();
-    $dataSlider1->setContentsHeader($url, $arrHeader);
-    $dataSlider1->getContentsHeader(1, 1);
+';
+echo $slide;
+echo $slidePrimary;
+echo $ajaxTag;
 }
 
 add_action('wp_body_open', 'addAjax');
@@ -270,23 +279,25 @@ function addAjax(){
     endif;
 }
 
-add_action('get_footer', 'adsImage');
-function adsImage()
+add_action('get_footer', 'footerContent');
+function footerConten()
 {
-    $url = 'https://syoobe.co.id';
-    $dataAds = new scrappingContent();
-    $dataAds->setAdsImage($url);
-    $dataAds->getAdsImage();
-
-    $arrFooter = [
-        '<footer class="footer slide clearfix">',
-        '</footer>',
-        '<div class="f-cell cl-effect-21 ">',
-        '</div>'
-    ];
-    $footer = new scrappingContent();
-    $footer->setContents($url, $arrFooter);
-    $footer->getContents();
+    // ads above footer
+    $dataAds = GetAdsImage($url);
+    echo $dataAds;
+    
+    // bagian content footer
+    $dataFooter = GetContent($url, $paramContent[10]);
+    $dataFooter = explode($paramContent[11], $dataFooter[1]);
+    $footer = $paramContent[10];
+    $footerContent = $dataFooter[0];
+    $endFooter = $paramContent[11];
+    $backTop = $dataFooter[1].'</div>';
+    
+    echo $footer;
+    echo $footerContent;
+    echo $endFooter;
+    echo $backTop;
 }
 
 add_action('wp_footer', 'styleFooter');
