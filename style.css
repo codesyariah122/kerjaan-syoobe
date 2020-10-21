@@ -1,0 +1,171 @@
+/*Theme Name: child-colormag-syoobe
+Theme URI: https://themegrill.com/themes/colormag/
+Description: Child theme dari colormag untuk syoobe
+Author: ThemeGrill
+Author URI: https://themegrill.com
+Template: colormag
+Version: 2.0.0.3
+*/
+/* 
+PT. Syoobe Inti Perdana | Community Syoobe Indonesia
+Author: permanto@syoobe.co.id
+=======================================================*/
+
+/* @import url("../colormag/style.css"); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin+Sketch&family=Caveat:wght@700&family=Comfortaa:wght@500&family=Fira+Sans:ital@1&family=Indie+Flower&family=Kodchasan&family=Krona+One&family=Lexend+Peta&family=Limelight&family=Michroma&family=Monoton&family=Righteous&family=Syncopate&display=swap'); */
+
+#settings-mobile{
+    cursor:pointer;
+}
+#settings-tablet{
+    cursor:pointer;
+}
+
+.author .vcard {
+    display:none;
+}
+/* #alert-subscribe{
+    display: none;
+} */
+
+/*Right*/
+/* .modal.right.fade .modal-dialog {
+    color: #fff;
+    right: -250px;
+    top: 140px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+.modal-backdrop {
+    background-color: rgba(0,0,0,.0001) !important;
+}
+.modal.fade .modal-dialog {
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+}
+.modal.right.fade.in .modal-dialog {
+    right: 0;
+} */
+/* ----- MODAL STYLE ----- */
+/* .modal-content {
+    border-radius: 0;
+    border: none;
+    background-color: #FF3A59;
+}
+
+.modal-header {
+    border-bottom-color: #EEEEEE;
+    background-color: #FAFAFA;
+} */
+/* ----- v CAN BE DELETED v ----- */
+
+/* #moretab-burger{
+    cursor:pointer;
+}
+#humberger-close{
+    cursor:pointer;
+}
+.elementor-accordion-item {
+    margin-bottom: 2.3rem;
+}
+.elementor-tab-content ul li:hover{
+    background: linear-gradient(to right, crimson, crimson 50%, salmon 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+} */
+
+/* .icon-toko{
+    font-size: 12px;
+}
+
+.sticky{
+    margin: 0;
+    padding: 2px 0 0 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    background: white;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index:1;
+    box-shadow: .7px .9px #888888;
+}
+
+.sticky-mobile{
+    max-height: calc(100vh – 60px);
+    overflow-y: scroll;
+} */
+
+/* .keranjang{
+    cursor:pointer;
+}
+.svg-keranjang{
+    cursor:pointer;
+}
+
+.keranjang-plus{
+    cursor:pointer;
+} */
+
+
+/* .sitemap-heading{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 3rem;
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness:5%;
+    text-decoration-color:grey; 
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 16px;
+}
+
+
+.sitemap-list{
+    padding-top:2px;
+    
+}
+.tags-links a{
+    color:grey;
+}
+.tags-links a:hover{
+    color: crimson;
+}
+
+.tags-links a:hover{
+    color:crimson;
+} */
+
+/* @media only screen and (max-width:760px){
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .hfe-nav-menu{
+        overflow: hidden;
+    }
+    .hfe-nav-menu nav ul li a{
+        z-index:1;
+        float: left;
+        display: block;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+} */
+
+
+
+
+
