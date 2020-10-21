@@ -225,6 +225,7 @@ add_action('wp_body_open', 'headerContent');
 function headerContent()
 {
 require_once 'fungsiSyoobe.php';
+
 $url = 'https://www.syoobe.co.id';
 $paramContent = [
     '<header class="header slide">',
@@ -280,8 +281,23 @@ function addAjax(){
 }
 
 add_action('get_footer', 'footerContent');
-function footerConten()
-{
+function footerContent()
+{   
+    $url = 'https://www.syoobe.co.id';
+    $paramContent = [
+        '<header class="header slide">',
+        '</header>',
+        '<div class="main-nav-bar slide">',
+        '</div>',
+        '<div class="content slide">',
+        '</div>',
+        '<div class="section category-list">',
+        '</div>',
+        '<div class="resp-tabs-container shop-list collection_box">',
+        '</div>',
+        '<footer class="footer slide clearfix">',
+        '</footer>'
+    ];
     // ads above footer
     $dataAds = GetAdsImage($url);
     echo $dataAds;
