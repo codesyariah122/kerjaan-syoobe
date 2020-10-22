@@ -227,23 +227,23 @@ $paramContent = [
 $dataHeader = GetContent($url, $paramContent[0]);
 $dataHeader = explode($paramContent[1], $dataHeader[1]);
 $header = $paramContent[0];
-$headerPrimary = $dataHeader[0]."</header></div>";
+$headerContent = $dataHeader[0]."</header></div>";
 echo $header;
-echo $headerPrimary;
+echo $headerContent;
 
 
 $dataMenu = GetContent($url, $paramContent[2]);
 $dataMenu = explode($paramContent[4], $dataMenu[1]);
 $menu = $paramContent[2];
-$menuPrimary = $dataMenu[0];
+$menuContent = $dataMenu[0];
 echo $menu;
-echo $menuPrimary;
+echo $menuContent;
 
 
 $dataSlide = GetContent($url, $paramContent[4]);
 $dataSlide = explode($paramContent[5], $dataSlide[1]);
 $slide = $paramContent[4];
-$slidePrimary = $dataSlide[0].'</div>';
+$slideContent = $dataSlide[0].'</div>';
 
 $ajaxTag = '
 <div id="ajax_message">
@@ -251,7 +251,7 @@ $ajaxTag = '
 
 ';
 echo $slide;
-echo $slidePrimary;
+echo $slideContent;
 echo $ajaxTag;
 }
 
