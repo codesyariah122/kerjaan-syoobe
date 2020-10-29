@@ -1,0 +1,126 @@
+<style>
+.polaroid{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    color: rgb(255,228,181);
+    position: relative;
+    text-align: center;
+}
+.text-media{
+    font-family: 'Fredoka One', cursive;
+        text-transform: uppercase;
+        color:rgb(255,248,220);
+        opacity: 0.8;
+         text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.text-pers{
+    font-family: 'Fredoka One', cursive;
+        text-transform: uppercase;
+        color:rgb(255,228,181);
+        opacity: 0.8;
+         text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+.syoobe-card{
+    color: rgb(220,20,60);
+    font-family: 'Fredoka One', cursive;
+    font-size: 18px;
+}
+.blockquote-media{
+        margin-top:1rem;
+        background: rgba(205,133,63, 0.5);
+        width: 50%;
+        color:rgb(250,235,215);
+        border: 5px solid rgb(0, 0, 0);
+        box-shadow:5px 10px rgb(220,220,220);
+        cursor: pointer;
+}
+.blockquote-media:hover{
+    background: rgba(250,250,210, 0.7);
+    color:rgb(169,169,169);
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: -.7rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: black;
+}
+.polaroid{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+    color: rgb(255,228,181);
+    position: relative;
+    text-align: center;
+}
+</style>
+<div class="fixed-container">
+    
+    <div class="row">
+      <div class="d-flex justify-content-center mb-5">
+          <blockquote class="blockquote-media">
+             <i onclick="openModal()" class="fas fa-bookmark fa-3x fa-fw" data-toggle="popover" data-trigger="focus" title="Click aja coba" data-content="And here's some amazing content. It's very engaging. Right?" style="color:crimson;"></i>
+              <i class="fas fa-bookmark fa-2x fa-fw" data-toggle="popover" data-trigger="focus" title="Click aja coba" data-content="And here's some amazing content. It's very engaging. Right?" style="color:tomato;"></i>
+             <br/>
+             "Kemudahan dalam jangkauan, menjadi integritas bagi kami untuk senantiasa memberikan pelayanan terbaik bagi kemajuan bisnis anda"<br/>
+          </blockquote>
+      </div>
+      
+      <div class="d-flex justify-content-center">
+           <img src="https://blog.syoobe.co.id/wp-content/uploads/2020/10/revolution-marketplace.jpg" class="img-responsive polaroid">
+          <div id="modal-video" class="modal">
+              <i class="far fa-window-close fa-fw fa-3x" onclick="closeModal()" style="cursor:pointer;"></i>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/T5o_0BoTvWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+      
+    </div>
+    
+    <div class="row">
+         <div class="col-md-6 mt-3 mb-5">
+            <div class="polaroid">
+                <img src="https://blog.syoobe.co.id/wp-content/uploads/2020/10/shooping-syoobe.jpg" class="img-responsive">                
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            
+            <h1 class="text-media"><i class="fas fa-business-time fa-fw" style="color:rgb(255,235,205);"></i> Media Kit</h1>
+                <p class="text-justify" style="font-family: 'Courgette', cursive; ">Anda Bisa mendownload logo resmi <span class="syoobe-card">syoobe</span>, di link berikut</p>
+            
+        </div>
+        
+    </div>
+    
+    <hr style="color:rgb(245,222,179);!important">
+    
+    <div class="row mt-5">
+        
+        <div class="col-md-6">
+             <h1 class="text-pers">Siaran pers <i class="fas fa-camera-retro fa-fw" style="color:rgb(255,222,173);"></i> </h1>
+             <p class="text-justify" style="font-family: 'Courgette', cursive; ">Marketplace <span class="syoobe-card">syoobe</span><br/>. Lorem ipsum, atau ringkasnya lipsum, adalah teks standar yang ditempatkan untuk mendemostrasikan elemen grafis atau presentasi visual seperti font, tipografi, dan tata letak.</p>
+        </div>
+        
+        <div class="col-md-6">
+            
+            <div class="polaroid">
+                <img src="https://blog.syoobe.co.id/wp-content/uploads/2020/10/syoobe-2.jpg" class="img-responsive">                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</div>
