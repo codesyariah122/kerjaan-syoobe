@@ -20,6 +20,8 @@ let data = {
         'url' : 'https://www.syoobe.co.id/user/account',
         'login' : 'https://www.syoobe.co.id',
     },
+    'blogURL' : 'https://blog.syoobe.co.id/',
+
     'moretab': $('#moretab-burger'),
     'categories' : $('#categories-second'),
     'menuId' : $('#menu-1-6d73763'),
@@ -53,6 +55,7 @@ let data = {
     'cartCheckout' : $('#cart-checkout'),
     'cartSummary' : $('#cart_summary'),
     'primaryLink' : $('.primary-link'),
+    'slider' : $('.rslides'),
     'firstLink' : $('.firstlink'),
     'secondLink' : $('.secondlink'),
     'moreLink' : $('.morelink'),
@@ -61,7 +64,22 @@ let data = {
     'linksFooter' : $('.links'),
     'secondLinksFooter' : $('.secondlinks'),
     'clickTrigger' : $('.click_trigger'),
-    'subscribeNews' : $('#subscribeNewsletter')
+    'subscribeNews' : $('#subscribeNewsletter'),
+    'entryTitle' : $('.entry-title'),
+    'jumbotronPers' : $('.jumbotron-pers'),
+    'jumbotronIklan' : $('.jumbotron-iklan'),
+    'showPertanyaan' : $('#show-pertanyaan'),
+    'pertanyaan' : $('#pertanyaan'),
+    'subjectPertanyaan' : $('input[name="your-subject"]'),
+    'showIklan' : $('#show-iklan'),
+    'pemasanganIklan' : $('#pemasangan-iklan'),
+    'subjectIklan' : $('input[name="your-subject"]'),
+    'closePertanyaan' : $('#closes-pertanyaan'),
+    'closeIklan' : $('#closes-iklan'),
+    'navToggle' : $('#navToggle'),
+    'submitForm' : $('.wpcf7-submit'),
+    'addsFooter' : $('.adds'),
+    'modalVideo' : $('#modal-video'),
 };
 
 const baseURL = data.button.login;
