@@ -29,12 +29,36 @@ function redirect(){
     window.open(baseURL);
 }
 
+data.playIcon.hide();
+data.pauseIcon.hide();
+data.viewIcon.hide();
+
+$('iframe[src*="https://www.youtube.com/embed/"]').addClass("youtube-iframe");
+
+data.bookmarkIcon.on('mouseover', function(){
+    data.playIcon.show('slow').fadeIn(1000);
+    $(this).hide('slow').slideUp(1000);
+})
+
 function openModal() {
   document.getElementById("modal-video").style.display = "block";
+  data.playIcon.hide('slow').slideUp(1000);
+  data.pauseIcon.show('slow').fadeIn(1000);
+}
+
+function pauseYoutube(){
+    data.pauseIcon.hide();
+    data.playIcon.show();
+    data.viewIcon.hide('slow').slideUp(1000);
+    $('.youtube-iframe').each(function(index) {
+        $(this).attr('src', $(this).attr('src'));
+        return false;
+      });
 }
 
 function closeModal() {
   document.getElementById("modal-video").style.display = "none";
+  data.viewIcon.show();
 }
 
 data.navToggle.css({
@@ -463,3 +487,5 @@ $(document).ready(function(){
     });
 
 });
+
+  
