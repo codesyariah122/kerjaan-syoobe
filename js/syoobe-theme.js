@@ -8,6 +8,7 @@
 
 // $('.primary-btn').hide();
 // $('.secondary-btn').hide();
+data.modalVideo.hide();
 function login_popupbox(){
     // fancyboxLogin.fancybox();
     data.fancyboxLogin.css({
@@ -28,6 +29,98 @@ function redirect(){
     window.open(baseURL);
 }
 
+function openModal() {
+  document.getElementById("modal-video").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal-video").style.display = "none";
+}
+
+data.navToggle.css({
+    'cursor' : 'pointer'
+})
+// alert(location.href);
+if(location.href !== data.blogURL){
+    data.slider.hide();
+    data.addsFooter.hide();
+}else{
+    data.slider.show();
+    data.addsFooter.show();
+}
+
+// data.entryTitle.css({
+//     'display' : 'none'
+// });
+
+data.jumbotronPers.css({
+    'background-image': 'url("http://blog.syoobe.co.id/wp-content/uploads/2020/10/cheerful-business-woman-make-winner-gesture-scaled.jpg")',
+    'background-color': '#17234E',
+    'margin-bottom': '0',
+    'margin-top' : '-1rem',
+    'min-height': '80vh',
+    'width' :'100%',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center',
+    '-webkit-background-size': 'cover',
+    'background-size': 'cover'
+});
+
+data.jumbotronIklan.css({
+    'background-image': 'url("http://blog.syoobe.co.id/wp-content/uploads/2020/10/woman-sitting-happily-working-with-smartphone-coffee-shop-notebook-scaled.jpg")',
+    'background-color': '#17234E',
+    'margin-bottom': '0',
+    'margin-top' : '-1rem',
+    'min-height': '80vh',
+    'width' :'100%',
+    'background-repeat': 'no-repeat',
+    'background-position': 'center',
+    '-webkit-background-size': 'cover',
+    'background-size': 'cover'
+});
+
+data.pertanyaan.hide();
+data.pemasanganIklan.hide();
+data.showPertanyaan.on('click', function(){
+    data.pertanyaan.show('slow').fadeIn(1000);
+    data.subjectPertanyaan.attr('value', 'pertanyaan');
+    data.subjectPertanyaan.attr('readonly', 'true'); 
+    data.pemasanganIklan.hide('slow').slideUp(1000);
+});
+data.showIklan.on('click', function(){
+    data.subjectIklan.attr('value', 'pasang-iklan');
+    if (this.hash !== "") {
+      event.preventDefault();
+      const hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+
+        window.location.hash = hash;
+
+      });
+    } // End if
+});
+
+data.closePertanyaan.css({
+    'cursor' : 'pointer'
+});
+data.closeIklan.css({
+    'cursor' : 'pointer'
+});
+data.closePertanyaan.on('click', function(){
+    data.pertanyaan.hide('slow').slideUp(1000);
+})
+data.closeIklan.on('click', function(){
+    data.pemasanganIklan.hide('slow').slideUp(1000);
+});
+
+
+data.submitForm.addClass('btn-block');
+data.submitForm.css({
+    'margin-top' : '1.5rem'
+});
 // header footer data syoobe
 const becomeSeller = data.becomeSeller.attr('href');
 const cartPage = data.cartPage.attr('href');
@@ -54,26 +147,37 @@ for(let i = 0; i<=data.firstLink.length; i++){
 }
 data.buttonNormal.attr('href', `${baseURL}${buttonNormal}`);
 
+
 for(let i = 0; i<=data.secondLink.length; i++){
     const secondLink = data.secondLink.eq(i).attr('href');
     data.secondLink.eq(i).attr('href', `${baseURL}${secondLink}`);
 }
+
+
+
 for(let i = 0; i <= data.moreLink.length; i++){
     const moreLink = data.moreLink.eq(i).attr('href');
     data.moreLink.eq(i).attr('href', `${baseURL}${moreLink}`);
 }
 
-
+// alert(data.linksFooter.length);
+for(let i = 0; i <= data.linksFooter.length; i++){
+    const firstLinksFooter = data.linksFooter.eq(i).attr('href');
+    data.linksFooter.eq(i).attr('href', `${baseURL}${firstLinksFooter}`);
+}
 
 // dom footer links sitemap
 for(let i = 0; i <= data.secondLinksFooter.length; i++){
     const secondLinksFooter = data.secondLinksFooter.eq(i).attr('href');
-    if(secondLinksFooter == 'https://blog.syoobe.co.id/'){
+    if(secondLinksFooter == 'https://blog.syoobe.co.id/' || secondLinksFooter == 'https://blog.syoobe.co.id/siaran-pers-syoobe/' || secondLinksFooter == 'https://blog.syoobe.co.id/pemasangan-iklan/'){
         data.secondLinksFooter.eq(i).attr('href', `${secondLinksFooter}`);
     }else{
         data.secondLinksFooter.eq(i).attr('href', `${baseURL}${secondLinksFooter}`);
     }
 }
+
+
+
 
 // form subscribe syoobe
 const newsLetter = data.subscribeNews.attr('action');
@@ -90,14 +194,15 @@ data.clickTrigger.on('click', function(){
     location.href=baseURL;
 });
 
-$('#colophon').remove();
-$('.footer-socket-wrapper').remove();
-$('#masthead').remove();
-$('#jquery-core-js').remove();
-$('#scroll-up').remove();
-
+$('#ct_1').removeAttr('href');
 
 $(document).ready(function(){
+    $('#colophon').remove();
+    $('.footer-socket-wrapper').remove();
+    $('#masthead').remove();
+    $('#jquery-core-js').remove();
+    $('#scroll-up').remove();
+    
     // data.marquee.hide();
 
 
@@ -358,5 +463,3 @@ $(document).ready(function(){
     });
 
 });
-
-  
