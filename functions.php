@@ -64,24 +64,57 @@ function syoobeCss(){
     ?>
         <!-- CSS
         ================================================== -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link  rel="stylesheet" type="text/css" href="https://www.syoobe.co.id/public/index.php?url=jscss/css&f=css%2Fbootstrap.min.css%2Ccss%2Fskeleton.css%2Ccss%2Fnav.css%2Ccss%2Fowl.carousel.css%2Ccss%2Fowl.transitions.css%2Ccss%2Fphone.css%2Ccss%2Ftablet.css%2Ccss%2Fslider.css%2Ccss%2Fvalidation.css%2Ccss%2Fpersonal.css%2Ccss%2Fstar-rating.css%2Cjs%2Ffancybox%2Fsource%2Fjquery.fancybox.css%2Ccss%2Ffacebox.css%2Ccss%2Feasy-responsive-tabs.css%2CreCaptcha%2Fstyle.css%2Ccss%2Fjquery.datetimepicker.css%2Cjs%2FLiveEditor%2Fscripts%2Fstyle%2Fawesome.css%2Ccss%2Fmagnific-popup.css&min=1&sid=1601350871" />
+       <meta name="description" content="Kami menyediakan fasilitas layanan terbaik untuk mendukung toko online Anda." />
+       <meta name="keywords" content="toko online, situs jual beli." /><meta name="author" content="">
     
-    <link  rel="stylesheet" type="text/css" href="https://www.syoobe.co.id/public/index.php?url=jscss/css&f=css%2Fresponsiveslides.css&min=1&sid=1525539625" />
-    <link rel="stylesheet" href="https://www.syoobe.co.id/css/theme-color.php">
-    <link rel="stylesheet" href="https://www.syoobe.co.id/css/progress-bar.css">
-    <link rel="stylesheet" href="carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="carousel/dist/assets/owl.theme.default.min.css">
-
+    <!-- Mobile Specific Metas
+      ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google-site-verification" content="AJMN8uDkwow487-roC0CbjAhe4lE-NADkPHxZ04Ndhg" />
+    <!-- CSS
+      ================================================== -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@700&family=Comfortaa:wght@300&family=Indie+Flower&family=Krona+One&family=Open+Sans+Condensed:wght@300&family=Righteous&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=Henny+Penny&family=Monoton&family=Poiret+One&display=swap" rel="stylesheet"> 
+    <link  rel="stylesheet" type="text/css" href="https://syoobe.co.id/public/index.php?url=jscss/css&f=css%2Fbootstrap.min.css%2Ccss%2Fskeleton.css%2Ccss%2Fnav.css%2Ccss%2Fowl.carousel.css%2Ccss%2Fowl.transitions.css%2Ccss%2Fphone.css%2Ccss%2Ftablet.css%2Ccss%2Fslider.css%2Ccss%2Fvalidation.css%2Ccss%2Fpersonal.css%2Ccss%2Fstar-rating.css%2Cjs%2Ffancybox%2Fsource%2Fjquery.fancybox.css%2Ccss%2Ffacebox.css%2Ccss%2Feasy-responsive-tabs.css%2CreCaptcha%2Fstyle.css%2Ccss%2Fjquery.datetimepicker.css%2Cjs%2FLiveEditor%2Fscripts%2Fstyle%2Fawesome.css%2Ccss%2Fmagnific-popup.css&min=1&sid=1602989616" />
+    <link  rel="stylesheet" type="text/css" href="https://syoobe.co.id/public/index.php?url=jscss/css&f=css%2Fresponsiveslides.css&min=1&sid=1525539625" />
+    <link rel="stylesheet" href="/css/theme-color.php">
+    <link rel="stylesheet" href="/css/progress-bar.css">
+    <!--[if lt IE 9]>
+    		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+    <!-- All JavaScript at the bottom, except for Modernizr and Respond.
+    Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries -->
+    <!--<script src="/js/modernizr-1.7.min.js" type="text/javascript"></script>
+    <script src="/js/respond.min.js" type="text/javascript"></script>
+    <script src="/js/jquery-latest.js" type="text/javascript"></script>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5961a0be191e1a0012335277&product=sticky-share-buttons' async='async'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.8.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://syoobe.co.idhttps://syoobe.co.id/public/js/cookie.min.js" type="text/javascript"></script>
     <script  type="text/javascript">
-	    	var webroot="/";
-	    	var userwebroot = "/";
-	    	var url_rewriting_enabled = 1;
-	</script>
-
-    <script  type="text/javascript" language="javascript" src="https://www.syoobe.co.id/public/index.php?url=jscss/js&f=js%2Frespond.min.js%2Cjs%2Fjquery-latest.js%2Cjs%2Fjquery.extend.js%2Cjs%2Fsite-functions.js%2Cform-validation.js.php%2Cfunctions.js.php%2Cjs%2Ffacebox.js%2Cjs%2Fjquery.loadJSON.js%2Cjs%2Fjquery.raty.min.js%2Cjs%2Fjquery.datetimepicker.js%2Cjs%2Fjquery.jscroll.min.js%2Cjs%2Fjquery.barrating.min.js%2Cjs%2Fmodernizr-1.7.min.js%2Cjs%2Fcommon.js%2Cjs%2Fresponsive-img.js%2Cjs%2Ftrunk.js%2Cjs%2FeasyResponsiveTabs.js%2Cjs%2Fjquery.lightSlider.js%2Cjs%2Fjquery.magnific-popup.js%2Cjs%2Fgrids.min.js&min=1&sid=1575615608"></script>
-    <script  type="text/javascript" language="javascript" src="https://www.syoobe.co.id/public/index.php?url=jscss/js&f=js%2Fowl.carousel.js%2Cjs%2Fresponsiveslides.min.js&min=1&sid=1525539621"></script>  
+    	    	var webroot="/";
+    	    	var userwebroot = "/";
+    	    	var url_rewriting_enabled = 1;
+    	    	</script>
+    <script  type="text/javascript" language="javascript" src="https://syoobe.co.id/public/index.php?url=jscss/js&f=js%2Frespond.min.js%2Cjs%2Fjquery-latest.js%2Cjs%2Fjquery.extend.js%2Cjs%2Fsite-functions.js%2Cform-validation.js.php%2Cfunctions.js.php%2Cjs%2Ffacebox.js%2Cjs%2Fjquery.loadJSON.js%2Cjs%2Fjquery.raty.min.js%2Cjs%2Fjquery.datetimepicker.js%2Cjs%2Fjquery.jscroll.min.js%2Cjs%2Fjquery.barrating.min.js%2Cjs%2Fmodernizr-1.7.min.js%2Cjs%2Fcommon.js%2Cjs%2Fresponsive-img.js%2Cjs%2Ftrunk.js%2Cjs%2FeasyResponsiveTabs.js%2Cjs%2Fjquery.lightSlider.js%2Cjs%2Fjquery.magnific-popup.js%2Cjs%2Fgrids.min.js%2Cjs%2Fnew-script.js&min=1&sid=1603727746"></script>
+    <script  type="text/javascript" language="javascript" src="https://syoobe.co.id/public/index.php?url=jscss/js&f=js%2Fowl.carousel.js%2Cjs%2Fresponsiveslides.min.js&min=1&sid=1525539621"></script>
+    <script  type="text/javascript" language="javascript" src="https://syoobe.co.id/public/index.php?url=pagejsandcss/js/home/default_action&sid=1602576729"></script>
+    <script type="text/javascript">
+    	jQuery.Validation.setMessages({"required":"{caption} adalah wajib.","charonly":"Hanya karakter yang didukung untuk{caption}.","integer":"Masukkan nilai integer untuk{caption}.","floating":"Harap masukkan nilai numerik untuk{caption}.","lengthrange":"Panjang{caption} harus antara{minlength} dan{maxlength}.","range":"Nilai{caption} harus antara{minval} dan{maxval}","username":"{caption} harus dimulai dengan huruf dan hanya boleh berisi karakter alfanumerik (huruf, _,., digit). Panjang harus antara 4 hingga 20 karakter.","password":"{caption} tidak boleh berisi karakter whitespace.","comparewith":"{caption} tidak dapat dicocokkan.","email":"Harap masukkan ID email yang valid untuk{caption}.","user_regex":"Nilai tidak valid untuk{caption}"})	
+    </script>
+    <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b1565568e56ee0011c80190&product=gdpr-compliance-tool' async='async'></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- Favicons ================================================== -->
+    <link rel="shortcut icon" href="/image/site_favicon/icon2.png">
+    <link rel="apple-touch-icon" href="/image/apple_touch_icon/favicon.png">
+    <link href="https://syoobe.co.id:443/" rel="canonical" />
+    <link href='' rel='stylesheet' type='text/css' id="theme-switcher-css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
     <?php
 }
 
@@ -331,15 +364,5 @@ function addAnyJquery() {
 
         });
         </script>
-
-        <script type="text/javascript">
-            const urlLink = 'https://www.syoobe.co.id';
-            const oldLinks = $('.links').attr('href');
-            for(let i = 0; i <= oldLinks.length; i++){
-                $('.links').eq(i).attr('href', urlLink+oldLinks);
-            }
-        </script>
   <?php
 }
-
-
