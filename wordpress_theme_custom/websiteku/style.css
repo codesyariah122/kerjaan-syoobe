@@ -140,10 +140,7 @@ Tags: Responsive, Bootstrap
     font-weight: 200;
 }
 
-.panel-img{
-    margin-top: -8rem;
-    z-index: 1;
-}
+
 /* content page */
 /* polaroid */
 .polaroid{
@@ -151,9 +148,9 @@ Tags: Responsive, Bootstrap
     color: rgb(255,228,181);
     position: relative;
     text-align: center;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
+    margin-top:5rem;
 }
-
 .polaroid img{
     width: 250px;
     height: 150px;
@@ -173,15 +170,19 @@ Tags: Responsive, Bootstrap
     font-family:'Lemon/Milk Regular';
 }
 
-.underline{
-    content:'';
+
+.underline:after{
+    content: '';
     display: block;
-    border-bottom: 5px solid coral;
-    width: 30%;
-    margin:auto;
-    margin-top:-3rem;
-    margin-bottom: 1rem;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    margin-bottom:2rem;
+    width: 100px;
+    height: 2px;
+    background:rgb(255, 99, 78);
 }
+
 
 .parallax{
     min-height: 500px; 
@@ -211,31 +212,6 @@ Tags: Responsive, Bootstrap
     font-size: 18px;
 }
 
-.panel{
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    margin-top: -1rem;
-    padding:12px;
-    background-color: white;
-}
-.panel-body{
-    margin-top:1rem;
-}
-.panel-body h1{
-    font-family: 'Poiret One', cursive;
-    font-weight:800;
-    text-align: center;
-    font-size: 35px;
-}
-.panel-body p{
-    font-size: 14px;
-    text-align: justify;
-}
-.panel img{
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-}
 
 @media only screen and (max-device-width: 812px) {
     .parallax {
@@ -277,34 +253,23 @@ Tags: Responsive, Bootstrap
         text-transform: capitalize;
     }
 
-    /* pannel bootstrap */
-    .panel{
-        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
-        border-radius: 12px;
-        margin-top: -1rem;
-        padding:12px;
-        background-color: white;
-    }
-    .panel-body{
-        margin-top:1rem;
-    }
-    .panel-body h1{
-        font-family: 'Poiret One', cursive;
-        font-weight:800;
-        text-align: center;
-        font-size: 35px;
-    }
-    .panel-body p{
-        font-size: 14px;
-        text-align: justify;
-    }
-    .panel img{
-        border-radius: 50%; 
-        width: 500px;
-        height: 500px;
-    }
-    /* end pannel */
     /* content */
+    .polaroid{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
+        color: rgb(255,228,181);
+        position: relative;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-top:-5rem;
+    }
+
+    .polaroid-body h2{
+        padding: 25px;
+        color:black;
+        font-family: 'Poiret One', cursive;font-weight:bold;
+        font-size: 25px;
+    }
+
     .polaroid img{
         width: 500px;
         height: 400px;

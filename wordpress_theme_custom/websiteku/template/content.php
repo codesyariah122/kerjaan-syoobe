@@ -1,1 +1,5 @@
-<?php the_content(); ?>
+<div id="contentApp">
+    
+    <?php the_content(); ?>
+
+</div> <!-- contentApp -->
