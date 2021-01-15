@@ -58,9 +58,19 @@ configuration php.ini in your web server :
 file_uploads = On
 allow_url_fopen = On
 memory_limit = 256M
-upload_max_filesize = 1000M
+upload_max_filesize = 100M
 max_execution_time = 360
 date.timezone = Asia/Jakarta
+```  
+
+adding new configuration in .htaccess file :  
+
+```
+php_value upload_max_filesize 64M
+php_value post_max_size 128M
+php_value memory_limit 256M
+php_value max_execution_time 300
+php_value max_input_time 300    
 ```  
 
 - Woody ad snippets – Insert Header Footer Code, AdSense Ads  
