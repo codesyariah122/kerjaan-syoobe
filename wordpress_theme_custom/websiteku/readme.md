@@ -1,28 +1,9 @@
-### this is my custom wordpress theme  
+### My Custom Wordpress Theme  
 after download and extract this repo : 
 copy this directory to your wp-theme directory and install this plugin :  
 
 ```
 <?php
-/**
- * The base configuration for WordPress
- *
- * The wp-config.php creation script uses this file during the
- * installation. You don't have to use the web site, you can
- * copy this file to "wp-config.php" and fill in the values.
- *
- * This file contains the following configurations:
- *
- * * MySQL settings
- * * Secret keys
- * * Database table prefix
- * * ABSPATH
- *
- * @link https://wordpress.org/support/article/editing-wp-config-php/
- *
- * @package WordPress
- */
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'wordpress' );
@@ -89,9 +70,9 @@ date.timezone = Asia/Jakarta
 After finish all plugins at the top, create new snippet for page content, example :  
 in this repo there is direcotry pages, open up the file  
 - Home  
-  ```home.html``` for home page (static page wordpress)  
-- About
-  ```about.html``` for about page  
+	```home.html``` for home page (static page wordpress)  
+- About  
+	```about.html``` for about page  
 > copy the code to that your new snippet created
 
 Regards
