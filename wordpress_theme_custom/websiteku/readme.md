@@ -1,6 +1,13 @@
 ### My Custom Wordpress Theme  
 after download and extract this repo : 
 copy this directory to your wp-theme directory and install this plugin :  
+- Woody ad snippets – Insert Header Footer Code, AdSense Ads  
+- Disable Guttenberd or Classic Editor  
+- Elementor (Optional)  
+
+Configuration for wordpress :
+
+Config wp-config.php :  
 
 ```
 <?php
@@ -71,11 +78,7 @@ php_value post_max_size 128M
 php_value memory_limit 256M
 php_value max_execution_time 300
 php_value max_input_time 300    
-```  
-
-- Woody ad snippets – Insert Header Footer Code, AdSense Ads  
-- Disable Guttenberd or Classic Editor  
-- Elementor (Optional)  
+```   
 
 After finish all plugins at the top, create new snippet for page content, example :  
 in this repo there is direcotry pages, open up the file  
